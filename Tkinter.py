@@ -66,7 +66,7 @@ def signup():
 #####################################################################
 #                                                                                           #Parvat version =PV
 #   Load the EPS file using PIL                                                               # load the image
-image = Image.open('C:/Users/Justyn Lim/Desktop/Python/vectorimg.eps')                        #image = PhotoImage(file='C:/Users/Justyn Lim/Desktop/Python/login.png')
+image = Image.open('C:/Users/Justyn Lim/Desktop/Python/tkinter/resources/login.eps')                        #image = PhotoImage(file='C:/Users/Justyn Lim/Desktop/Python/login.png')
 
 #   Resize
 new_width, new_height = 398,332
@@ -99,10 +99,10 @@ def on_leave(e):
 user = Entry(frame,width=25,fg='black',border=0,bg="White",font=(font_1,11)) # Cannot use: .place(x=30,y=80),causes error
 user.place(x=30,y=80)
 user.insert(0,'Username')
-user.bind('<FocusIn>', on_enter) and ('<FocusOut>', on_leave)
+user.bind('<FocusIn>', on_enter) and user.bind('<FocusOut>', on_leave)
 #user.bind('<FocusOut>', on_leave)
 
-Frame(frame,width=295,height=2,bg='black').place(x=25,y=107)
+Frame(frame,width=295,height=2,bg='black').place(x=25,y=107) #25,107
 #####################---------------------------------------------------------
 def on_enter(e):
     pw.delete(0,'end')
