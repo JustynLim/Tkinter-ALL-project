@@ -112,3 +112,14 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+misc/App.txt
+misc/accounts.db
+misc/datasheet.txt
+misc/Draft.py
+misc/import sqlite3.py
+misc/inifile.txt
+misc/Sandbox.py
+misc/Testing_Class.py
+misc/Tkinter (SignUp).py
+misc/Tkinter.py
+misc/Verify_Login.txt
