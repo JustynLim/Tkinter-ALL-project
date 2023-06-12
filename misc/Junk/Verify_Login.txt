@@ -1,0 +1,20 @@
+
+connect db
+cursor cur = 
+execute("select USERNAME,PASSWORD_HASH,RECORD_ID from users where USERNAME = ?" 
+
+row = fetchone()
+
+if row is not None:
+	salt_db = row[2]
+	password_hash_db = row[1]
+	password_hash = encrypt_pw(salt_db,password)
+	if password_hash_db != password_hash:
+		messagebox.error("","")
+
+	else:
+		#successful log in
+
+else:
+	# Invalid username/password
+

@@ -1,0 +1,25 @@
+
+global user_table_definition, add_user_sql; global connection, cursor
+    username=user.get(); password_hash
+
+
+password_hash = pw_hash(password)
+
+
+
+
+def pw_hash(password)
+sdflsdflsdf
+sf
+sdfs
+dfsd
+return HASH_PW
+
+
+
+Fetch record with only username 
+fetchone()
+is not none
+row(2)
+call encrypt, supply salt+#user password
+retrieve fetchone()

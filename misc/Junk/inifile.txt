@@ -1,0 +1,22 @@
+[PATH]
+SQLITE=db\Accounts.db
+
+
+[FILE]
+LOG_FILE=log\mylog.log
+
+
+
+
+
+DB_NAME= getinifile_str("inifile.ini","[PATH]","SQLITE")
+
+
+def getinifile_str(file_name , group_name , var_name)
+
+	rtn_str = ''
+	open(file_name)
+	read	
+	return rtn_str 
+
+
